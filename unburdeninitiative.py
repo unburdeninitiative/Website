@@ -1,6 +1,13 @@
 from flask import Flask, flash, redirect, render_template, request, session
+from flask_frozen import Freezer
 
 app= Flask(__name__)
+
+freezer = Freezer(app)
+
+if __name__ == '__main__':
+    freezer.freeze()
+
 
 @app.route("/", endpoint='home')
 def home():
