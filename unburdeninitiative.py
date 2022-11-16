@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
 @app.route("/", endpoint='home')
 def home():
-    return render_template("Index.html")
+    return render_template("index.html")
 
 @app.route("/Aboutus.html",endpoint='about')
 def about():
